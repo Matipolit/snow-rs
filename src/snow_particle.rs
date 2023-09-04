@@ -6,7 +6,7 @@ pub mod snow_particle{
         style::{Stylize, PrintStyledContent, Color, StyledContent},QueueableCommand,
     };
     
-    static COLORS: &'static [Color] = &[Color::Black, Color::Blue, Color::Magenta, Color::Green, Color::Yellow];
+    static COLORS: &'static [Color] = &[Color::White, Color::Black, Color::Blue, Color::Magenta, Color::Green, Color::Yellow];
 
     pub struct Particle {
         pub x: u16,
