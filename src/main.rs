@@ -64,7 +64,7 @@ fn main() -> io::Result<()> {
         delay = time::Duration::from_millis(20);
     }
     let debug = args.contains(&"debug".to_owned());    
-    let colorful = args.contains(&"colorful".to_owned()) | args.contains(&"color".to_owned());
+    let colorful = args.contains(&"colorful".to_owned()) | args.contains(&"color".to_owned()) | args.contains(&"colour".to_owned()) | args.contains(&"colourful".to_owned());
     let sausage = args.contains(&"sausage".into());
     
     stdout.execute(cursor::Hide)?;    
@@ -96,7 +96,6 @@ fn main() -> io::Result<()> {
                 particle.respawn(rng.gen_range(0..max_x), 0);
             }
         }
-        stdout.flush()?;
         thread::sleep(delay);
     }
 }
